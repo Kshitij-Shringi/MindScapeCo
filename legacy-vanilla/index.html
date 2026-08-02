@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MindScape &amp; Co. — Online therapy with Sanskruti</title>
+<meta name="description" content="Thoughtful, inclusive online therapy for adults — trauma-informed, queer-affirmative, disability-inclusive. A collaborative space to feel heard, at your own pace." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div style="min-height: 100vh; background: #EAEFF6;">
+
+  <header style="position: sticky; top: 0; z-index: 60; background: rgba(234,239,246,.82); backdrop-filter: blur(14px); border-bottom: 1px solid #C7D0E2;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 14px 22px; display: flex; align-items: center; gap: 22px;">
+      <a href="#top" data-action="goHome" style="font-family: Newsreader, Georgia, serif; font-size: 19px; letter-spacing: .01em; text-decoration: none; color: #1E2B45; white-space: nowrap;">MindScape <span style="color: #5E7095;">&amp; Co.</span></a>
+      <nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-left: auto; font-size: 14px; color: #5E7095;">
+        <a href="#approach" data-action="goHome" style="text-decoration: none; color: #5E7095;">Approach</a>
+        <a href="#explore" data-action="goHome" style="text-decoration: none; color: #5E7095;">What we explore</a>
+        <a href="#workshops" data-action="goHome" style="text-decoration: none; color: #5E7095;">Workshops</a>
+        <a href="#about" data-action="goHome" style="text-decoration: none; color: #5E7095;">About</a>
+        <a href="#crisis" style="text-decoration: none; color: #5E7095;">Crisis support</a>
+        <button type="button" data-action="goGrounding" class="btn-underline" style="font-size: 14px;">Take a breath</button>
+        <a href="#enquiry" data-action="goHome" data-magnet="1" class="btn-peach" style="font-size: 14px; padding: 10px 18px;" data-hover-shadow="0 8px 22px rgba(30,43,69,.16)">Book a consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section id="hero" style="position: relative; overflow: hidden; min-height: 94vh; display: flex; align-items: flex-end; padding: 132px 22px 46px;">
+      <div id="ms-hero-warp" style="position: absolute; inset: -20%; pointer-events: none; opacity: .5; transition: transform 1.8s cubic-bezier(.2,.6,.2,1);">
+        <div style="position: absolute; left: 2%; top: 0%; width: 66%; height: 86%; border-radius: 50%; background: radial-gradient(circle at 42% 42%, #C4CFE6, rgba(196,207,230,0) 68%); filter: blur(34px); animation: msBreathe 10s ease-in-out infinite;"></div>
+        <div style="position: absolute; right: -4%; top: 8%; width: 58%; height: 78%; border-radius: 50%; background: radial-gradient(circle at 58% 48%, #DCE4F0, rgba(220,228,240,0) 70%); filter: blur(30px); animation: msBreatheB 10s ease-in-out infinite;"></div>
+        <div style="position: absolute; left: 24%; bottom: -18%; width: 56%; height: 62%; border-radius: 50%; background: radial-gradient(circle at 50% 50%, rgba(193,135,107,.20), rgba(193,135,107,0) 70%); filter: blur(40px); animation: msDrift 24s ease-in-out infinite;"></div>
+      </div>
+
+      <div style="position: relative; width: 100%; max-width: 1240px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(48px, 7vw, 90px); align-items: center; padding: clamp(30px, 7vh, 86px) 0 clamp(44px, 9vh, 100px);">
+          <div>
+            <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.22; letter-spacing: -.012em; color: #1E2B45; max-width: 20ch;">
+              <span style="display: block; overflow: hidden; padding-bottom: .06em;"><span data-hline="1" style="display: block;">You don't have</span></span>
+              <span style="display: block; overflow: hidden; padding-bottom: .06em;"><span data-hline="1" style="display: block;">to carry it all</span></span>
+              <span style="display: block; overflow: hidden; padding-bottom: .04em;"><span data-hline="1" style="display: block;">on your own.</span></span>
+            </h1>
+            <p data-hline="1" style="margin: clamp(26px, 4vh, 40px) 0 0; font-size: clamp(17px, 1.35vw, 20px); line-height: 1.65; color: #5E7095; max-width: 44ch; text-wrap: pretty;">Thoughtful, inclusive online therapy for adults — a collaborative space to feel heard, and to begin at your own pace.</p>
+            <div data-hline="1" style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px 24px; margin-top: clamp(30px, 5vh, 46px);">
+              <a href="#enquiry" data-magnet="1" class="btn-peach" style="font-size: 15px; padding: 17px 32px;" data-hover-shadow="0 12px 30px rgba(30,43,69,.18)">Start with a conversation</a>
+              <button type="button" data-action="goGrounding" class="btn-underline" style="font-size: 15px;">or take a breath first</button>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; justify-self: center;">
+            <div aria-hidden="true" style="position: relative; width: min(400px, 74vw); aspect-ratio: 1; display: flex; align-items: center; justify-content: center;">
+              <div style="position: absolute; inset: 0; border: 1px solid #C7D0E2; border-radius: 50%;"></div>
+              <div style="position: absolute; inset: 11%; border: 1px solid #C7D0E2; border-radius: 50%; animation: msOrbRing 10s ease-in-out infinite;"></div>
+              <div style="position: absolute; inset: 21%; border-radius: 50%; background: radial-gradient(circle at 42% 38%, #F5F8FC 0%, #B7C3DD 58%, #DCE4F0 100%); box-shadow: 0 26px 70px rgba(30,43,69,.14); animation: msOrb 10s ease-in-out infinite;"></div>
+            </div>
+            <button type="button" data-action="goGrounding" class="btn-caps" style="font-size: 13px; letter-spacing: .18em; text-transform: uppercase;">breathe with me</button>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid #C7D0E2; margin-top: clamp(40px, 8vh, 92px); padding-top: 16px;">
+          <p style="margin: 0; font-size: 13px; letter-spacing: .1em; color: #5E7095;">Trauma-informed · Queer-affirmative · Disability-inclusive</p>
+          <p style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #5E7095;">Scroll <span aria-hidden="true" style="display: inline-block; width: 46px; height: 1px; background: #B7C3DD;"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <section data-reveal="1" style="padding: 20px 22px 92px;">
+      <div style="max-width: 780px; margin: 0 auto; text-align: center;">
+        <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.55; text-wrap: pretty;">Therapy with me is collaborative, reflective, and rooted in connection. We go at your pace — there's nothing you need to have figured out first.</p>
+      </div>
+    </section>
+
+    <section id="explore" style="padding: 8px 22px 96px;">
+      <div style="max-width: 1180px; margin: 0 auto;">
+        <div data-reveal="1" style="display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; border-bottom: 1px solid #C7D0E2; padding-bottom: 18px; margin-bottom: 40px;">
+          <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(26px, 3.4vw, 38px);">What we might explore</h2>
+          <span style="font-size: 14px; color: #5E7095;">Not limited to</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px;">
+          <article data-reveal="1" class="card-explore">
+            <span aria-hidden="true" style="width: 26px; height: 26px; border: 1.5px solid #5E7095; border-radius: 50% 50% 50% 6px;"></span>
+            <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 20px;">Anxiety &amp; overthinking</h3>
+          </article>
+          <article data-reveal="1" class="card-explore">
+            <span aria-hidden="true" style="width: 26px; height: 26px; border: 1.5px solid #5E7095; border-radius: 6px 50% 50% 50%;"></span>
+            <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 20px;">Burnout &amp; perfectionism</h3>
+          </article>
+          <article data-reveal="1" class="card-explore">
+            <span aria-hidden="true" style="width: 26px; height: 26px; border: 1.5px solid #5E7095; border-radius: 50%; border-right-color: transparent;"></span>
+            <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 20px;">Relationships &amp; attachment patterns</h3>
+          </article>
+          <article data-reveal="1" class="card-explore">
+            <span aria-hidden="true" style="width: 26px; height: 26px; border: 1.5px solid #5E7095; border-radius: 50% 6px 50% 6px;"></span>
+            <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 20px;">Body image &amp; self-esteem</h3>
+          </article>
+          <article data-reveal="1" class="card-explore">
+            <span aria-hidden="true" style="width: 26px; height: 26px; border: 1.5px solid #5E7095; border-radius: 50%; border-top-color: transparent;"></span>
+            <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 20px;">Identity, sexuality &amp; gender</h3>
+          </article>
+          <article data-reveal="1" class="card-explore">
+            <span aria-hidden="true" style="width: 26px; height: 26px; border: 1.5px solid #5E7095; border-radius: 6px; transform: rotate(45deg);"></span>
+            <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 20px;">Complex trauma, shame &amp; grief</h3>
+          </article>
+          <article data-reveal="1" class="card-explore">
+            <span aria-hidden="true" style="width: 26px; height: 26px; border: 1.5px solid #5E7095; border-radius: 50%; border-bottom-color: transparent; border-left-color: transparent;"></span>
+            <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 20px;">Numbness &amp; meaning-making</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" style="background: #DCE4F0; padding: 96px 22px;">
+      <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px 60px;">
+        <div data-reveal="1">
+          <h2 style="margin: 0 0 20px; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(26px, 3.4vw, 38px);">How I work</h2>
+          <div style="width: 54px; height: 1px; background: #5E7095;"></div>
+        </div>
+        <div data-reveal="1" style="display: flex; flex-direction: column; gap: 22px; font-size: 18px; line-height: 1.8; color: #1E2B45; max-width: 58ch;">
+          <p style="margin: 0;">My work is grounded in a relational and humanistic approach, thoughtfully integrating different lenses (Narrative, Existential, and Somatic) while remaining culturally responsive to each person's unique story, context, and lived experience.</p>
+          <p style="margin: 0;">Alongside therapy, I facilitate psychoeducational trainings and reflective workshops that encourage self-understanding, meaningful dialogue, and collective learning.</p>
+          <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.6;">Therapy with me is collaborative, reflective, and rooted in connection.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: 92px 22px;">
+      <div style="max-width: 1180px; margin: 0 auto;">
+        <h2 data-reveal="1" style="margin: 0 0 34px; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(26px, 3.4vw, 38px);">At a glance</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
+          <div data-reveal="1" style="background: #F5F8FC; border: 1px solid #C7D0E2; border-radius: 18px; padding: 30px 26px;">
+            <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #5E7095;">Format</p>
+            <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 21px; line-height: 1.45;">Online therapy for individuals &amp; couples</p>
+          </div>
+          <div data-reveal="1" style="background: #F5F8FC; border: 1px solid #C7D0E2; border-radius: 18px; padding: 30px 26px;">
+            <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #5E7095;">Also</p>
+            <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 21px; line-height: 1.45;">Psychoeducational trainings &amp; reflective workshops</p>
+          </div>
+          <div data-reveal="1" style="background: #F5F8FC; border: 1px solid #C7D0E2; border-radius: 18px; padding: 30px 26px;">
+            <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #5E7095;">Who</p>
+            <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 21px; line-height: 1.45;">Adults aged 18–45</p>
+          </div>
+          <div data-reveal="1" style="background: #F5F8FC; border: 1px solid #C7D0E2; border-radius: 18px; padding: 30px 26px;">
+            <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #5E7095;">Practice</p>
+            <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 21px; line-height: 1.45;">Trauma-informed, queer-affirmative, disability-inclusive</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-reveal="1" style="padding: 0 22px 96px;">
+      <div style="max-width: 1180px; margin: 0 auto; background: #F5F8FC; border: 1px solid #C7D0E2; border-radius: 26px; padding: 52px 44px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px; align-items: center;">
+        <div>
+          <p style="margin: 0 0 14px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #5E7095;">Grounding Sanctuary</p>
+          <h2 style="margin: 0 0 16px; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(24px, 3vw, 34px); max-width: 22ch; text-wrap: pretty;">Before you read on — take a moment to breathe with me.</h2>
+          <p style="margin: 0 0 26px; font-size: 17px; line-height: 1.75; color: #5E7095; max-width: 52ch;">A quiet room of grounding exercises you can use any time. A small taste of how I work — no sign-up, nothing to say out loud.</p>
+          <button type="button" data-action="goGrounding" data-magnet="1" class="btn-outline-fill">Step inside</button>
+        </div>
+        <div style="justify-self: center;">
+          <div style="width: 150px; height: 150px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, #B7C3DD, rgba(183,195,221,.25) 70%); animation: msBreathe 10s ease-in-out infinite;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workshops" style="background: #F5F8FC; border-top: 1px solid #C7D0E2; border-bottom: 1px solid #C7D0E2; padding: 92px 22px;">
+      <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px 60px; align-items: start;">
+        <div data-reveal="1">
+          <h2 style="margin: 0 0 18px; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(26px, 3.4vw, 38px);">Workshops &amp; trainings</h2>
+          <p style="margin: 0 0 26px; font-size: 18px; line-height: 1.8; color: #5E7095; max-width: 50ch;">Psychoeducational trainings and reflective workshops for groups, teams and communities — spaces for self-understanding, meaningful dialogue, and collective learning.</p>
+          <button type="button" data-action="enquireWorkshop" data-magnet="1" class="btn-soft">Enquire about a workshop</button>
+        </div>
+        <div data-reveal="1" style="display: flex; flex-direction: column; gap: 1px; background: #C7D0E2; border: 1px solid #C7D0E2; border-radius: 18px; overflow: hidden;">
+          <div style="background: #F5F8FC; padding: 24px 26px; font-size: 17px; line-height: 1.6;">Reflective spaces for teams and student groups</div>
+          <div style="background: #F5F8FC; padding: 24px 26px; font-size: 17px; line-height: 1.6;">Psychoeducation on burnout, boundaries and rest</div>
+          <div style="background: #F5F8FC; padding: 24px 26px; font-size: 17px; line-height: 1.6;">Trauma-informed and queer-affirmative practice sessions</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="padding: 96px 22px;">
+      <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px 60px; align-items: start;">
+        <div data-reveal="1" style="position: relative; aspect-ratio: 4/5; max-width: 320px; width: 100%;">
+          <div style="position: absolute; inset: -5%; background: #B7C3DD; border-radius: 54% 46% 40% 60% / 48% 52% 48% 52%;"></div>
+          <div role="img" aria-label="Placeholder for a portrait photograph of Sanskruti" style="position: absolute; inset: 0; border-radius: 50% 50% 46% 54% / 52% 48% 52% 48%; overflow: hidden; background: repeating-linear-gradient(135deg, #DCE4F0 0 10px, #E6ECF5 10px 20px); display: flex; align-items: flex-end; justify-content: center; padding: 18px;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .06em; color: #5E7095; background: rgba(245,248,252,.86); padding: 6px 10px; border-radius: 999px;">portrait placeholder</span>
+          </div>
+        </div>
+        <div data-reveal="1">
+          <h2 style="margin: 0 0 6px; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(26px, 3.4vw, 38px);">Sanskruti</h2>
+          <p style="margin: 0 0 26px; font-size: 15px; color: #5E7095;">she/her · Psychotherapist</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px;">
+            <span style="font-size: 13px; padding: 9px 16px; border-radius: 999px; border: 1px solid #C7D0E2; background: #F5F8FC; color: #1E2B45;">MSc Clinical Psychology</span>
+            <span style="font-size: 13px; padding: 9px 16px; border-radius: 999px; border: 1px solid #C7D0E2; background: #F5F8FC; color: #1E2B45;">+2 additional qualifications</span>
+            <span style="font-size: 13px; padding: 9px 16px; border-radius: 999px; border: 1px solid #C7D0E2; background: #F5F8FC; color: #1E2B45;">3+ years of therapeutic experience</span>
+          </div>
+          <p style="margin: 0 0 18px; font-size: 18px; line-height: 1.8; color: #1E2B45; max-width: 58ch;">I offer a thoughtful, inclusive, and collaborative space for adults navigating life's challenges. My practice is trauma-informed, queer-affirmative and disability-inclusive — you are welcome here as you are.</p>
+          <p style="margin: 0; font-size: 18px; line-height: 1.8; color: #5E7095; max-width: 58ch;">Sessions are online, so we can meet from wherever you feel most at ease.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="enquiry" style="background: #DCE4F0; padding: 96px 22px;">
+      <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px 56px; align-items: start;">
+        <div>
+          <h2 style="margin: 0 0 14px; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(26px, 3.4vw, 38px);">Get in touch</h2>
+          <p style="margin: 0 0 34px; font-size: 17px; line-height: 1.75; color: #5E7095; max-width: 50ch;">This is the start of a conversation, not a form to get right. Answer only what you'd like to.</p>
+
+          <form id="enquiry-form" style="display: flex; flex-direction: column; gap: 34px;">
+            <fieldset style="border: 0; padding: 0; margin: 0;">
+              <legend style="padding: 0; margin: 0 0 14px; font-family: Newsreader, Georgia, serif; font-size: 20px;">What brings you here today?</legend>
+              <div id="enq-themes" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+            </fieldset>
+
+            <fieldset style="border: 0; padding: 0; margin: 0;">
+              <legend style="padding: 0; margin: 0 0 14px; font-family: Newsreader, Georgia, serif; font-size: 20px;">What are you looking for?</legend>
+              <div id="enq-seek" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+            </fieldset>
+
+            <fieldset style="border: 0; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+              <legend style="padding: 0; margin: 0 0 14px; font-family: Newsreader, Georgia, serif; font-size: 20px;">How can I reach you?</legend>
+              <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5E7095;">Name
+                <input type="text" name="name" autocomplete="name" style="font: inherit; font-size: 16px; color: #1E2B45; padding: 13px 15px; border-radius: 12px; border: 1px solid #C7D0E2; background: #F5F8FC;" />
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5E7095;">Email
+                <input type="email" name="email" autocomplete="email" style="font: inherit; font-size: 16px; color: #1E2B45; padding: 13px 15px; border-radius: 12px; border: 1px solid #C7D0E2; background: #F5F8FC;" />
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5E7095;">Phone / WhatsApp
+                <input type="tel" name="phone" autocomplete="tel" style="font: inherit; font-size: 16px; color: #1E2B45; padding: 13px 15px; border-radius: 12px; border: 1px solid #C7D0E2; background: #F5F8FC;" />
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5E7095;">Rough availability
+                <input type="text" name="availability" placeholder="e.g. weekday evenings" style="font: inherit; font-size: 16px; color: #1E2B45; padding: 13px 15px; border-radius: 12px; border: 1px solid #C7D0E2; background: #F5F8FC;" />
+              </label>
+              <label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5E7095;">Anything you'd like me to know (optional)
+                <textarea name="note" rows="4" style="font: inherit; font-size: 16px; color: #1E2B45; padding: 13px 15px; border-radius: 12px; border: 1px solid #C7D0E2; background: #F5F8FC; resize: vertical;"></textarea>
+              </label>
+            </fieldset>
+
+            <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.65; color: #1E2B45; max-width: 60ch;">
+              <input type="checkbox" name="consent" required style="margin-top: 4px; width: 18px; height: 18px; accent-color: #1E2B45;" />
+              <span>I consent to MindScape &amp; Co. contacting me about my enquiry. My details will be kept confidential and used only for this purpose. <a href="#privacy">Privacy policy</a> (placeholder).</span>
+            </label>
+
+            <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+              <button type="submit" data-magnet="1" class="btn-peach" style="font-size: 15px; padding: 15px 30px;" data-hover-shadow="0 10px 26px rgba(30,43,69,.18)">Send enquiry</button>
+              <p id="enq-sent" role="status" style="margin: 0; font-size: 14px; color: #5E7095; max-width: 34ch; line-height: 1.6; opacity: 0; transition: opacity .6s ease-out;">Thank you — this is a placeholder form; connect a submission endpoint to receive enquiries.</p>
+            </div>
+            <p style="margin: -14px 0 0; font-size: 13px; color: #5E7095;">Form endpoint: placeholder — wire to email or a form service before launch.</p>
+          </form>
+        </div>
+
+        <aside style="display: flex; flex-direction: column; gap: 18px;">
+          <div style="background: #F5F8FC; border: 1px solid #C7D0E2; border-radius: 20px; padding: 28px;">
+            <h3 style="margin: 0 0 18px; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 20px;">Or reach me directly</h3>
+            <p style="margin: 0 0 10px; font-size: 16px;"><a href="mailto:sanskruti.jkp@gmail.com">sanskruti.jkp@gmail.com</a></p>
+            <p style="margin: 0 0 18px; font-size: 16px;"><a href="tel:+918780978260">+91 87809 78260</a> · call or WhatsApp</p>
+            <div style="display: flex; align-items: center; gap: 14px;">
+              <div role="img" aria-label="Placeholder for the scan-to-connect QR code" style="width: 84px; height: 84px; border-radius: 12px; background: repeating-linear-gradient(135deg, #DCE4F0 0 8px, #E6ECF5 8px 16px); border: 1px solid #C7D0E2;"></div>
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; color: #5E7095;">QR placeholder<br />scan to connect</span>
+            </div>
+          </div>
+          <div style="border: 1px dashed #C7D0E2; border-radius: 20px; padding: 26px; text-align: center;">
+            <p style="margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; line-height: 1.7; color: #5E7095;">optional scheduler embed<br />(Calendly / Cal.com) — slot reserved</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="ms-ground" class="page">
+    <div id="ms-cursor" aria-hidden="true" style="position: fixed; left: 0; top: 0; width: 34px; height: 34px; margin: -17px 0 0 -17px; border: 1px solid #5E7095; border-radius: 50%; pointer-events: none; z-index: 90; opacity: 0; transition: opacity .6s ease-out, width .4s ease-out, height .4s ease-out;"></div>
+
+    <div data-page="hub" class="page is-active">
+      <section style="position: relative; overflow: hidden; padding: clamp(80px, 12vh, 130px) 22px 40px; background: linear-gradient(180deg, #DCE4F0, #EAEFF6);">
+        <div style="max-width: 1080px; margin: 0 auto;">
+          <p style="margin: 0 0 26px; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #5E7095;">Grounding Sanctuary · six rooms</p>
+          <h1 style="margin: 0 0 26px; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.18; letter-spacing: -.012em; color: #1E2B45; max-width: 22ch;">Take a moment. There's nothing to do here but arrive.</h1>
+          <p style="margin: 0 0 34px; font-size: 18px; line-height: 1.7; color: #5E7095; max-width: 52ch;">Each exercise has its own quiet room. Stay for one breath or ten minutes — take them in any order.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+            <button type="button" data-action="toggleCalm" id="calm-btn-hub" class="chip chip--sm"></button>
+            <button type="button" data-action="goHome" class="btn-ghost-pill">Back to the main site</button>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding: clamp(46px, 8vh, 86px) 22px clamp(70px, 10vh, 110px);">
+        <div id="rooms-grid" style="max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: #C7D0E2; border: 1px solid #C7D0E2; border-radius: 24px; overflow: hidden;"></div>
+        <p style="max-width: 1080px; margin: 30px auto 0; font-size: 15px; line-height: 1.7; color: #1E2B45;">These are grounding exercises, not a substitute for therapy or crisis support. <a href="#crisis">Crisis resources</a> · <a href="#enquiry" data-action="goHome">Get in touch with Sanskruti</a></p>
+      </section>
+    </div>
+
+    <div data-page="scatter" class="page">
+      <div style="padding: clamp(70px, 10vh, 110px) 22px 0;">
+      <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 14px; border-bottom: 1px solid #C7D0E2; padding-bottom: 16px; margin-bottom: clamp(34px, 6vh, 62px);">
+        <button type="button" data-action="nav.hub" class="btn-caps" style="font-size: 13px; letter-spacing: .12em; text-transform: uppercase;">← Grounding Sanctuary</button>
+        <p style="margin: 0; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #5E7095;">01 / 06 · Scattered → Calm</p>
+      </div>
+      </div>
+      <section id="ms-scatter" aria-labelledby="ms-scatter-h" style="position: relative; height: 300vh; background: #EAEFF6;">
+        <div style="position: sticky; top: 0; height: 100vh; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 40px 22px;">
+          <div style="position: relative; width: 100%; max-width: 1000px;">
+            <div data-sc="1" data-sx="-14" data-sy="-16" data-sr="-7" style="max-width: 540px;">
+              <h2 id="ms-scatter-h" style="margin: 0 0 16px; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 3.2vw, 2.35rem); line-height: 1.2; letter-spacing: -.01em; color: #1E2B45;">When everything is at once</h2>
+              <p style="margin: 0; font-size: 17px; line-height: 1.75; color: #5E7095; max-width: 44ch;">Thoughts scattered, edges blurred, nothing quite in its place. Scroll gently — and let it settle.</p>
+            </div>
+            <div data-sc="1" data-sx="42" data-sy="10" data-sr="9" style="max-width: 380px; margin-top: 28px; background: #F5F8FC; border: 1px solid #C7D0E2; border-radius: 18px; padding: 22px 24px;">
+              <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #1E2B45;">Nothing has to be solved in this minute. Notice the weight of your body where it rests.</p>
+            </div>
+            <div data-sc="1" data-sx="-30" data-sy="18" data-sr="6" aria-hidden="true" style="width: 90px; height: 90px; border: 1.5px solid #B7C3DD; border-radius: 24px; margin-top: 26px;"></div>
+            <div data-sc="1" data-sx="26" data-sy="-22" data-sr="-11" aria-hidden="true" style="position: absolute; right: 4%; top: 0; width: 130px; height: 130px; border: 1.5px solid #B7C3DD; border-radius: 50%;"></div>
+            <div id="ms-sphere" aria-hidden="true" style="position: absolute; right: 8%; bottom: -6%; width: 230px; height: 230px; border-radius: 50%; background: radial-gradient(circle at 38% 34%, #F5F8FC, #B7C3DD 58%, #8FA0C4); box-shadow: 0 30px 70px rgba(30,43,69,.18); opacity: 0; transform: scale(.6);"></div>
+          </div>
+        </div>
+      </section>
+      <div style="padding: 0 22px clamp(70px, 10vh, 110px);">
+      <div style="max-width: 1080px; margin: clamp(48px, 8vh, 90px) auto 0; border-top: 1px solid #C7D0E2; padding-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #5E7095; max-width: 52ch;">These are grounding exercises, not a substitute for therapy or crisis support. <a href="#crisis">Crisis resources</a>.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <button type="button" data-action="toggleCalm" class="chip chip--sm calm-btn"></button>
+          <button type="button" data-action="nav.breath" data-magnet="1" class="btn-dark-pill">Next · Breathe with the light</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div data-page="breath" class="page">
+      <section aria-labelledby="ms-breath-h" style="padding: clamp(70px, 10vh, 110px) 22px clamp(70px, 10vh, 110px);">
+      <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 14px; border-bottom: 1px solid #C7D0E2; padding-bottom: 16px; margin-bottom: clamp(34px, 6vh, 62px);">
+        <button type="button" data-action="nav.hub" class="btn-caps" style="font-size: 13px; letter-spacing: .12em; text-transform: uppercase;">← Grounding Sanctuary</button>
+        <p style="margin: 0; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #5E7095;">02 / 06 · Breathe with the light</p>
+      </div>
+        <div style="max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 44px 56px; align-items: center;">
+          <div>
+            <h1 id="ms-breath-h" style="margin: 0 0 18px; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 3.2vw, 2.35rem); line-height: 1.2; letter-spacing: -.01em; color: #1E2B45;">Breathe with the light</h1>
+            <p style="margin: 0 0 26px; font-size: 17px; line-height: 1.75; color: #5E7095; max-width: 44ch;">The ring grows as you breathe in and softens as you breathe out. Choose a pattern that suits you, or just watch.</p>
+            <div role="group" aria-label="Breathing pattern" id="patterns-group" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px;"></div>
+            <p id="pattern-desc" style="margin: 0 0 24px; font-size: 15px; line-height: 1.7; color: #1E2B45; max-width: 46ch;"></p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+              <button type="button" data-action="toggleBreath" data-magnet="1" id="breath-toggle" class="btn-dark-pill"></button>
+              <button type="button" data-action="toggleTone" id="tone-toggle" class="chip chip--md"></button>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
+            <div style="position: relative; width: min(360px, 82vw); aspect-ratio: 1; display: flex; align-items: center; justify-content: center;">
+              <div id="ms-breath-orb" style="position: absolute; width: 74%; height: 74%; border-radius: 50%; background: radial-gradient(circle at 45% 40%, #F5F8FC, #B7C3DD 62%, rgba(183,195,221,.15)); box-shadow: 0 20px 60px rgba(30,43,69,.14); transform: scale(.66);"></div>
+              <div aria-hidden="true" style="position: absolute; inset: 0; border: 1px solid #C7D0E2; border-radius: 50%;"></div>
+            </div>
+            <p id="ms-breath-cue" role="status" style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 24px; font-weight: 300; color: #1E2B45; min-height: 32px; text-align: center;">Ready when you are</p>
+          </div>
+        </div>
+      <div style="max-width: 1080px; margin: clamp(48px, 8vh, 90px) auto 0; border-top: 1px solid #C7D0E2; padding-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #5E7095; max-width: 52ch;">These are grounding exercises, not a substitute for therapy or crisis support. <a href="#crisis">Crisis resources</a>.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <button type="button" data-action="toggleCalm" class="chip chip--sm calm-btn"></button>
+          <button type="button" data-action="nav.smoke" data-magnet="1" class="btn-dark-pill">Next · Clear the mist</button>
+        </div>
+      </div>
+      </section>
+    </div>
+
+    <div data-page="smoke" class="page">
+      <section aria-labelledby="ms-smoke-h" style="padding: clamp(70px, 10vh, 110px) 22px clamp(70px, 10vh, 110px);">
+      <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 14px; border-bottom: 1px solid #C7D0E2; padding-bottom: 16px; margin-bottom: clamp(34px, 6vh, 62px);">
+        <button type="button" data-action="nav.hub" class="btn-caps" style="font-size: 13px; letter-spacing: .12em; text-transform: uppercase;">← Grounding Sanctuary</button>
+        <p style="margin: 0; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #5E7095;">03 / 06 · Clear the mist</p>
+      </div>
+        <div style="max-width: 1080px; margin: 0 auto;">
+          <h1 id="ms-smoke-h" style="margin: 0 0 16px; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 3.2vw, 2.35rem); line-height: 1.2; letter-spacing: -.01em; color: #1E2B45;">Clear the mist</h1>
+          <p style="margin: 0 0 30px; font-size: 17px; line-height: 1.75; color: #5E7095; max-width: 56ch;">Move your cursor or finger slowly across the fog. The warmth underneath is always there — the mist just drifts back when you stop.</p>
+          <div style="position: relative; border-radius: 24px; overflow: hidden; border: 1px solid #C7D0E2; background: linear-gradient(120deg, #E9D4C2, #DCC3D6 55%, #C7D0E2);">
+            <canvas id="ms-smoke" width="1200" height="520" aria-hidden="true" style="display: block; width: 100%; height: auto; touch-action: pan-y;"></canvas>
+            <p id="ms-smoke-note" style="position: absolute; left: 22px; right: 22px; bottom: 20px; margin: 0; font-size: 14px; line-height: 1.6; color: #1E2B45; background: rgba(245,248,252,.86); padding: 12px 16px; border-radius: 12px; max-width: 44ch; display: none;">A warm, still image sits beneath a soft mist. Calm mode is on, so the mist is at rest.</p>
+          </div>
+          <p style="margin: 16px 0 0; font-size: 14px; color: #5E7095;">Nothing is hidden here — the exercise is simply moving slowly and noticing.</p>
+        </div>
+      <div style="max-width: 1080px; margin: clamp(48px, 8vh, 90px) auto 0; border-top: 1px solid #C7D0E2; padding-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #5E7095; max-width: 52ch;">These are grounding exercises, not a substitute for therapy or crisis support. <a href="#crisis">Crisis resources</a>.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <button type="button" data-action="toggleCalm" class="chip chip--sm calm-btn"></button>
+          <button type="button" data-action="nav.bilateral" data-magnet="1" class="btn-dark-pill">Next · Follow the light</button>
+        </div>
+      </div>
+      </section>
+    </div>
+
+    <div data-page="bilateral" class="page">
+      <section aria-labelledby="ms-bilat-h" style="padding: clamp(70px, 10vh, 110px) 22px clamp(70px, 10vh, 110px);">
+      <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 14px; border-bottom: 1px solid #C7D0E2; padding-bottom: 16px; margin-bottom: clamp(34px, 6vh, 62px);">
+        <button type="button" data-action="nav.hub" class="btn-caps" style="font-size: 13px; letter-spacing: .12em; text-transform: uppercase;">← Grounding Sanctuary</button>
+        <p style="margin: 0; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #5E7095;">04 / 06 · Follow the light</p>
+      </div>
+        <div style="max-width: 1080px; margin: 0 auto;">
+          <h1 id="ms-bilat-h" style="margin: 0 0 16px; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 3.2vw, 2.35rem); line-height: 1.2; letter-spacing: -.01em; color: #1E2B45;">Follow the light, side to side</h1>
+          <p style="margin: 0 0 10px; font-size: 17px; line-height: 1.75; color: #5E7095; max-width: 56ch;">Let your eyes travel with the orb as it drifts left and right. If you prefer touch, tap along with the alternating cue — a gentle butterfly hug.</p>
+          <p style="margin: 0 0 30px; font-size: 15px; line-height: 1.7; color: #1E2B45; max-width: 56ch;">A gentle grounding exercise to follow with your eyes — this is not EMDR therapy.</p>
+          <div style="position: relative; height: 220px; border-radius: 20px; background: linear-gradient(180deg, #EAEFF6, #DCE4F0); border: 1px solid #C7D0E2; overflow: hidden; display: flex; align-items: center;">
+            <div id="ms-bilat-orb" aria-hidden="true" style="position: absolute; left: 50%; width: 72px; height: 72px; margin-left: -36px; border-radius: 50%; background: radial-gradient(circle at 40% 38%, #F5F8FC, #B7C3DD 65%); box-shadow: 0 12px 34px rgba(30,43,69,.16);"></div>
+            <p id="ms-bilat-side" role="status" style="position: absolute; left: 0; right: 0; bottom: 16px; margin: 0; text-align: center; font-size: 14px; color: #5E7095;">Left</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px;">
+            <button type="button" data-action="toggleBilat" data-magnet="1" id="bilat-toggle" class="btn-dark-pill"></button>
+            <button type="button" data-action="toggleTap" id="tap-toggle" class="chip chip--md"></button>
+          </div>
+        </div>
+      <div style="max-width: 1080px; margin: clamp(48px, 8vh, 90px) auto 0; border-top: 1px solid #C7D0E2; padding-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #5E7095; max-width: 52ch;">These are grounding exercises, not a substitute for therapy or crisis support. <a href="#crisis">Crisis resources</a>.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <button type="button" data-action="toggleCalm" class="chip chip--sm calm-btn"></button>
+          <button type="button" data-action="nav.anchor" data-magnet="1" class="btn-dark-pill">Next · Press and hold</button>
+        </div>
+      </div>
+      </section>
+    </div>
+
+    <div data-page="anchor" class="page">
+      <section aria-labelledby="ms-anchor-h" style="padding: clamp(70px, 10vh, 110px) 22px clamp(70px, 10vh, 110px);">
+      <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 14px; border-bottom: 1px solid #C7D0E2; padding-bottom: 16px; margin-bottom: clamp(34px, 6vh, 62px);">
+        <button type="button" data-action="nav.hub" class="btn-caps" style="font-size: 13px; letter-spacing: .12em; text-transform: uppercase;">← Grounding Sanctuary</button>
+        <p style="margin: 0; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #5E7095;">05 / 06 · Press and hold</p>
+      </div>
+        <div style="max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 44px 56px; align-items: center;">
+          <div>
+            <h1 id="ms-anchor-h" style="margin: 0 0 16px; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 3.2vw, 2.35rem); line-height: 1.2; letter-spacing: -.01em; color: #1E2B45;">Press and hold</h1>
+            <p style="margin: 0 0 20px; font-size: 17px; line-height: 1.75; color: #5E7095; max-width: 44ch;">Hold the anchor down and the warmth grows. Let go and it fades, slowly. Nothing here rewards rushing.</p>
+            <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #5E7095;">Keyboard: focus the anchor and hold the space bar.</p>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <button type="button" id="ms-anchor" aria-label="Press and hold the anchor" style="position: relative; width: min(300px, 78vw); aspect-ratio: 1; border-radius: 50%; border: 1px solid #C7D0E2; background: #F5F8FC; cursor: pointer; overflow: hidden; touch-action: none;">
+              <span id="ms-anchor-bloom" aria-hidden="true" style="position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 50% 50%, rgba(193,135,107,.9), rgba(193,135,107,0) 68%); opacity: 0; transform: scale(.3);"></span>
+              <span style="position: relative; font-family: Newsreader, Georgia, serif; font-weight: 300; font-size: 21px; color: #1E2B45;">Hold</span>
+            </button>
+          </div>
+        </div>
+      <div style="max-width: 1080px; margin: clamp(48px, 8vh, 90px) auto 0; border-top: 1px solid #C7D0E2; padding-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #5E7095; max-width: 52ch;">These are grounding exercises, not a substitute for therapy or crisis support. <a href="#crisis">Crisis resources</a>.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <button type="button" data-action="toggleCalm" class="chip chip--sm calm-btn"></button>
+          <button type="button" data-action="nav.senses" data-magnet="1" class="btn-dark-pill">Next · 5 · 4 · 3 · 2 · 1</button>
+        </div>
+      </div>
+      </section>
+    </div>
+
+    <div data-page="senses" class="page">
+      <section aria-labelledby="ms-cards-h" style="padding: clamp(70px, 10vh, 110px) 22px clamp(70px, 10vh, 110px);">
+      <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 14px; border-bottom: 1px solid #C7D0E2; padding-bottom: 16px; margin-bottom: clamp(34px, 6vh, 62px);">
+        <button type="button" data-action="nav.hub" class="btn-caps" style="font-size: 13px; letter-spacing: .12em; text-transform: uppercase;">← Grounding Sanctuary</button>
+        <p style="margin: 0; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #5E7095;">06 / 06 · 5 · 4 · 3 · 2 · 1</p>
+      </div>
+        <div style="max-width: 1080px; margin: 0 auto;">
+          <h1 id="ms-cards-h" style="margin: 0 0 16px; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 3.2vw, 2.35rem); line-height: 1.2; letter-spacing: -.01em; color: #1E2B45;">5 · 4 · 3 · 2 · 1</h1>
+          <p style="margin: 0 0 36px; font-size: 17px; line-height: 1.75; color: #5E7095; max-width: 56ch;">Come back to the room through your senses. Take as long as you like with each card.</p>
+          <div id="cards-wrap" style="position: relative; min-height: 320px;"></div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-top: 28px;">
+            <button type="button" data-action="prevCard" data-magnet="1" class="btn-ghost-pill" style="padding: 12px 24px; background: #F5F8FC;">Back</button>
+            <button type="button" data-action="nextCard" data-magnet="1" class="btn-dark-pill" style="padding: 12px 24px;">Next</button>
+            <p id="card-count" role="status" style="margin: 0 0 0 6px; font-size: 14px; color: #5E7095;"></p>
+          </div>
+        </div>
+      <div style="max-width: 1080px; margin: clamp(48px, 8vh, 90px) auto 0; border-top: 1px solid #C7D0E2; padding-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #5E7095; max-width: 52ch;">These are grounding exercises, not a substitute for therapy or crisis support. <a href="#crisis">Crisis resources</a>.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <button type="button" data-action="toggleCalm" class="chip chip--sm calm-btn"></button>
+          <button type="button" data-action="nav.hub" data-magnet="1" class="btn-dark-pill">Next · Back to the sanctuary</button>
+        </div>
+      </div>
+      </section>
+    </div>
+  </div>
+
+  <section id="crisis" aria-labelledby="crisis-h" style="background: #1E2B45; color: #EAEFF6; padding: 52px 22px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <h2 id="crisis-h" style="margin: 0 0 12px; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(20px, 2.4vw, 26px); max-width: 40ch; text-wrap: pretty;">If you're in crisis or thinking about harming yourself, please reach out now — you deserve immediate support.</h2>
+      <p style="margin: 0 0 24px; font-size: 15px; color: #B7C3DD;">Free, confidential helplines in India:</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px;">
+        <div style="border-top: 1px solid #5E7095; padding-top: 14px;">
+          <p style="margin: 0 0 6px; font-size: 15px;">Tele-MANAS · Govt. of India, 24×7</p>
+          <p style="margin: 0; font-size: 18px;"><a href="tel:14416" style="color: #EAEFF6;">14416</a> · <a href="tel:18008914416" style="color: #EAEFF6;">1-800-891-4416</a></p>
+        </div>
+        <div style="border-top: 1px solid #5E7095; padding-top: 14px;">
+          <p style="margin: 0 0 6px; font-size: 15px;">Vandrevala Foundation · 24×7, call or WhatsApp</p>
+          <p style="margin: 0; font-size: 18px;"><a href="tel:+919999666555" style="color: #EAEFF6;">+91 9999 666 555</a> · <a href="tel:18602662345" style="color: #EAEFF6;">1860-266-2345</a></p>
+        </div>
+        <div style="border-top: 1px solid #5E7095; padding-top: 14px;">
+          <p style="margin: 0 0 6px; font-size: 15px;">AASRA · 24×7</p>
+          <p style="margin: 0; font-size: 18px;"><a href="tel:+919820466726" style="color: #EAEFF6;">+91 98204 66726</a></p>
+        </div>
+        <div style="border-top: 1px solid #5E7095; padding-top: 14px;">
+          <p style="margin: 0 0 6px; font-size: 15px;">iCall, TISS · Mon–Sat</p>
+          <p style="margin: 0; font-size: 18px;"><a href="tel:+919152987821" style="color: #EAEFF6;">+91 91529 87821</a></p>
+        </div>
+      </div>
+      <p style="margin: 24px 0 0; font-size: 14px; line-height: 1.7; color: #B7C3DD; max-width: 70ch;">MindScape &amp; Co. does not provide emergency or crisis services. In an immediate emergency, contact local emergency services.</p>
+    </div>
+  </section>
+
+  <footer style="background: #EAEFF6; padding: 56px 22px 40px;">
+    <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; align-items: start;">
+      <div>
+        <p style="margin: 0 0 10px; font-family: Newsreader, Georgia, serif; font-size: 19px;">MindScape <span style="color: #5E7095;">&amp; Co.</span></p>
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #5E7095; max-width: 34ch;">A queer-affirmative, trauma-informed, disability-inclusive practice.</p>
+      </div>
+      <nav aria-label="Footer" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <a href="#approach" data-action="goHome" style="text-decoration: none; color: #5E7095;">Approach</a>
+        <a href="#explore" data-action="goHome" style="text-decoration: none; color: #5E7095;">What we explore</a>
+        <a href="#workshops" data-action="goHome" style="text-decoration: none; color: #5E7095;">Workshops</a>
+        <a href="#about" data-action="goHome" style="text-decoration: none; color: #5E7095;">About</a>
+      </nav>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #5E7095;">
+        <a href="mailto:sanskruti.jkp@gmail.com" style="text-decoration: none; color: #5E7095;">sanskruti.jkp@gmail.com</a>
+        <a href="tel:+918780978260" style="text-decoration: none; color: #5E7095;">+91 87809 78260</a>
+        <a href="#privacy" style="text-decoration: none; color: #5E7095;">Privacy policy (placeholder)</a>
+      </div>
+      <p style="margin: 0; font-size: 13px; color: #5E7095;">© 2026 MindScape &amp; Co.</p>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
