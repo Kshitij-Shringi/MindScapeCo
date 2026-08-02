@@ -1,4 +1,5 @@
 import { useAppState } from "../state/AppState.jsx";
+import { scrollToHash } from "../hooks/useScrollNav.js";
 
 export default function Footer() {
   const { state, dispatch } = useAppState();
@@ -6,7 +7,7 @@ export default function Footer() {
   const goSection = (hash) => (e) => {
     e.preventDefault();
     if (state.page !== "home") dispatch({ type: "gotoHome", hash });
-    else document.querySelector("#" + hash)?.scrollIntoView({ behavior: "smooth" });
+    else scrollToHash("#" + hash);
   };
 
   return (

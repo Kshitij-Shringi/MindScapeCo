@@ -1,11 +1,25 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAppState } from "../state/AppState.jsx";
-import { gsap } from "../gsap.js";
+import { gsap, ScrollTrigger } from "../gsap.js";
 import { scrollToHash } from "../hooks/useScrollNav.js";
 
 export default function Header() {
   const { state, dispatch } = useAppState();
   const [open, setOpen] = useState(false);
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el || !("ResizeObserver" in window)) return undefined;
+    const apply = () => {
+      document.documentElement.style.setProperty("--header-h", el.offsetHeight + "px");
+      ScrollTrigger.refresh();
+    };
+    apply();
+    const ro = new ResizeObserver(apply);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   const goTop = (e) => {
     e.preventDefault();
@@ -33,7 +47,7 @@ export default function Header() {
   };
 
   return (
-    <header className="site-header">
+    <header className="site-header" ref={headerRef}>
       <div className="header-inner">
         <a href="#top" onClick={goTop} className="brand">
           MindScape <span>&amp; Co.</span>
