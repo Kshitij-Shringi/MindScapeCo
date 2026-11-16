@@ -14,7 +14,7 @@ export default function Smoke() {
     <section className="ground-section" aria-labelledby="ms-smoke-h">
       <RoomHeader index="03" total="06" label="Clear the mist" />
       <div className="ground-section-inner">
-        <h1 id="ms-smoke-h">Clear the mist</h1>
+        <h1 id="ms-smoke-h">Clear <em>the mist.</em></h1>
         <p className="smoke-copy">Move your cursor or finger slowly across the fog. The warmth underneath is always there — the mist just drifts back when you stop.</p>
         <div className="smoke-frame">
           <canvas ref={canvasRef} width={1200} height={520} aria-hidden="true" className="smoke-canvas" />

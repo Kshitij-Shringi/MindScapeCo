@@ -8,12 +8,12 @@ export function useSmoke(canvasRef, quiet) {
     if (quiet) {
       const ctx = canvas.getContext("2d");
       const g = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-      g.addColorStop(0, "#E9D4C2");
-      g.addColorStop(0.55, "#DCC3D6");
-      g.addColorStop(1, "#C7D0E2");
+      g.addColorStop(0, "#EFC9AF");
+      g.addColorStop(0.55, "#C98E72");
+      g.addColorStop(1, "#6F5C6E");
       ctx.fillStyle = g;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "rgba(199,208,226,.45)";
+      ctx.fillStyle = "rgba(38,43,56,.55)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       return undefined;
     }
@@ -56,18 +56,18 @@ export function useSmoke(canvasRef, quiet) {
           a[i] += (1 - a[i]) * 0.0045;
           if (a[i] < 0) a[i] = 0;
           const o = i * 4;
-          img.data[o] = 226;
-          img.data[o + 1] = 232;
-          img.data[o + 2] = 243;
-          img.data[o + 3] = Math.round(a[i] * 242);
+          img.data[o] = 44;
+          img.data[o + 1] = 47;
+          img.data[o + 2] = 60;
+          img.data[o + 3] = Math.round(a[i] * 214);
         }
       }
       octx.putImageData(img, 0, 0);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const g = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-      g.addColorStop(0, "#E9C7A8");
-      g.addColorStop(0.5, "#DCB8C6");
-      g.addColorStop(1, "#C0CBE2");
+      g.addColorStop(0, "#F2CFB4");
+      g.addColorStop(0.5, "#CB9174");
+      g.addColorStop(1, "#6F5C6E");
       ctx.fillStyle = g;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.save();

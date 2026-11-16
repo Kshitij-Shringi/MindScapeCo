@@ -20,7 +20,7 @@ export default function Scatter() {
         <div ref={innerRef} className={quiet ? "" : "scatter-inner"} style={quiet ? { padding: "80px 22px" } : undefined}>
           <div className="scatter-stage">
             <div data-sc="1" data-sx="-14" data-sy="-16" data-sr="-7" className="scatter-heading">
-              <h2 id="ms-scatter-h">When everything is at once</h2>
+              <h2 id="ms-scatter-h">When everything is <em>at once.</em></h2>
               <p>Thoughts scattered, edges blurred, nothing quite in its place. Scroll gently — and let it settle.</p>
             </div>
             <div data-sc="1" data-sx="42" data-sy="10" data-sr="9" className="scatter-card">

@@ -77,6 +77,13 @@ export function AppStateProvider({ children }) {
 
   const quiet = reduced || state.calm;
 
+  // One switch for CSS: OS reduced-motion and the sanctuary's Calm mode both
+  // swap slides/lifts/presses for gentle fades (see global.css).
+  useEffect(() => {
+    if (quiet) document.documentElement.dataset.motion = "reduced";
+    else delete document.documentElement.dataset.motion;
+  }, [quiet]);
+
   const value = useMemo(() => ({ state, dispatch, reduced, fine, quiet }), [state, reduced, fine, quiet]);
 
   return <AppStateContext.Provider value={value}>{children}</AppStateContext.Provider>;

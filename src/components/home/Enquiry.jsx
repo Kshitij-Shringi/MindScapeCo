@@ -10,10 +10,13 @@ export default function Enquiry() {
   };
 
   return (
-    <section id="enquiry" className="section enquiry-section">
-      <div className="container enquiry-grid">
+    <section id="enquiry" className="ch ch--night enq" aria-labelledby="enquiry-h">
+      <div className="enq-glow" aria-hidden="true" />
+      <div className="wrap">
+        <h2 id="enquiry-h" data-reveal="1" className="enq-title">Begin with a <em>conversation.</em></h2>
+      </div>
+      <div className="wrap enquiry-grid">
         <div>
-          <h2 className="h2" style={{ marginBottom: 14 }}>Get in touch</h2>
           <p className="enquiry-intro">This is the start of a conversation, not a form to get right. Answer only what you'd like to.</p>
 
           <form className="enquiry-form" onSubmit={onSubmit}>
@@ -90,13 +93,8 @@ export default function Enquiry() {
             </label>
 
             <div className="submit-row">
-              <button
-                type="submit"
-                data-magnet="1"
-                className="btn-peach btn-peach--md"
-                style={{ "--hover-shadow": "0 10px 26px rgba(30,43,69,.18)" }}
-              >
-                Send enquiry
+              <button type="submit" className="btn-light">
+                Send enquiry <span className="btn-arrow" aria-hidden="true">→</span>
               </button>
               <p role="status" className={"sent-msg" + (state.sent ? " is-visible" : "")}>
                 Thank you — this is a placeholder form; connect a submission endpoint to receive enquiries.
@@ -106,7 +104,7 @@ export default function Enquiry() {
           </form>
         </div>
 
-        <aside style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+        <aside className="enq-aside">
           <div className="contact-card">
             <h3>Or reach me directly</h3>
             <p><a href="mailto:sanskruti.jkp@gmail.com">sanskruti.jkp@gmail.com</a></p>

@@ -22,12 +22,14 @@ export function useAnchor(anchorRef, bloomRef, quiet) {
 
     anchor.addEventListener("pointerdown", press);
     window.addEventListener("pointerup", release);
+    window.addEventListener("pointercancel", release);
     anchor.addEventListener("keydown", onKeyDown);
     anchor.addEventListener("keyup", release);
     anchor.addEventListener("blur", release);
     return () => {
       anchor.removeEventListener("pointerdown", press);
       window.removeEventListener("pointerup", release);
+      window.removeEventListener("pointercancel", release);
       anchor.removeEventListener("keydown", onKeyDown);
       anchor.removeEventListener("keyup", release);
       anchor.removeEventListener("blur", release);

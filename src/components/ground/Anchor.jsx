@@ -15,7 +15,7 @@ export default function AnchorRoom() {
       <RoomHeader index="05" total="06" label="Press and hold" />
       <div className="ground-section-inner anchor-grid">
         <div className="anchor-copy">
-          <h1 id="ms-anchor-h">Press and hold</h1>
+          <h1 id="ms-anchor-h">Press <em>and hold.</em></h1>
           <p>Hold the anchor down and the warmth grows. Let go and it fades, slowly. Nothing here rewards rushing.</p>
           <p>Keyboard: focus the anchor and hold the space bar.</p>
         </div>

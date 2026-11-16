@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useAppState } from "../../state/AppState.jsx";
 import { useMagnetCursor } from "../../hooks/useMagnetCursor.js";
+import { usePageEnter } from "../../hooks/usePageEnter.js";
 import { gsap } from "../../gsap.js";
 import Hub from "./Hub.jsx";
 import Scatter from "./Scatter.jsx";
@@ -19,6 +20,16 @@ const PAGES = [
   ["anchor", Anchor],
   ["senses", Senses],
 ];
+
+function Room({ visible, quiet, children }) {
+  const ref = useRef(null);
+  usePageEnter(ref, visible, quiet);
+  return (
+    <div ref={ref} style={{ display: visible ? "block" : "none" }}>
+      {children}
+    </div>
+  );
+}
 
 export default function GroundingSanctuary() {
   const { state, quiet, fine } = useAppState();
@@ -41,9 +52,9 @@ export default function GroundingSanctuary() {
     <div id="ms-ground" ref={containerRef} className="ground-root" style={{ display: active ? "block" : "none" }}>
       <div className="ground-cursor" ref={ringRef} aria-hidden="true" />
       {PAGES.map(([key, Comp]) => (
-        <div key={key} style={{ display: state.page === key ? "block" : "none" }}>
+        <Room key={key} visible={state.page === key} quiet={quiet}>
           <Comp />
-        </div>
+        </Room>
       ))}
     </div>
   );

@@ -17,7 +17,7 @@ export default function Breath() {
       <RoomHeader index="02" total="06" label="Breathe with the light" />
       <div className="ground-section-inner breath-grid">
         <div className="breath-copy">
-          <h1 id="ms-breath-h">Breathe with the light</h1>
+          <h1 id="ms-breath-h">Breathe with <em>the light.</em></h1>
           <p>The ring grows as you breathe in and softens as you breathe out. Choose a pattern that suits you, or just watch.</p>
           <div role="group" aria-label="Breathing pattern" className="chip-row" style={{ marginBottom: 22 }}>
             {PATTERN_KEYS.map((key) => {
@@ -37,7 +37,7 @@ export default function Breath() {
           </div>
           <p className="pattern-desc">{PATTERNS[state.pattern].desc}</p>
           <div className="breath-actions">
-            <button type="button" data-magnet="1" className="btn-dark-pill" onClick={() => dispatch({ type: "toggleBreath" })}>
+            <button type="button" data-magnet="1" className="btn-light btn-light--sm" onClick={() => dispatch({ type: "toggleBreath" })}>
               {state.breathOn ? "Pause the breath" : "Start breathing"}
             </button>
             <button

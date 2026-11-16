@@ -13,7 +13,7 @@ export function useReveal(scopeRef, reduced) {
       onEnter: (batch) => gsap.to(batch, {
         opacity: 1,
         y: 0,
-        duration: 1.1,
+        duration: 0.9,
         ease: "power2.out",
         stagger: 0.09,
         overwrite: true,

@@ -12,10 +12,12 @@ export default function Footer() {
 
   return (
     <footer className="site-footer">
-      <div className="container footer-grid">
+      <div className="wrap footer-grid">
         <div className="footer-brand">
-          <p>MindScape <span style={{ color: "var(--muted)" }}>&amp; Co.</span></p>
           <p>A queer-affirmative, trauma-informed, disability-inclusive practice.</p>
+          <a href="#enquiry" className="btn-light btn-light--sm" onClick={goSection("enquiry")}>
+            Book a consultation <span className="btn-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
         <nav aria-label="Footer" className="footer-nav">
           <a href="#approach" onClick={goSection("approach")}>Approach</a>
@@ -28,6 +30,9 @@ export default function Footer() {
           <a href="tel:+918780978260">+91 87809 78260</a>
           <a href="#privacy">Privacy policy (placeholder)</a>
         </div>
+      </div>
+      <div className="wrap">
+        <p className="footer-mark" aria-hidden="true">MindScape <em>&amp; Co.</em></p>
         <p className="footer-copy">© 2026 MindScape &amp; Co.</p>
       </div>
     </footer>

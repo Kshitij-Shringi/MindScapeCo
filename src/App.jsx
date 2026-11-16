@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { AppStateProvider, useAppState } from "./state/AppState.jsx";
-import { scrollToHash } from "./hooks/useScrollNav.js";
-import { gsap, ScrollTrigger } from "./gsap.js";
+import { scrollToHash, scrollToTop } from "./hooks/useScrollNav.js";
+import { ScrollTrigger } from "./gsap.js";
 import Header from "./components/Header.jsx";
 import Home from "./components/home/Home.jsx";
 import GroundingSanctuary from "./components/ground/GroundingSanctuary.jsx";
@@ -17,7 +17,7 @@ function Shell() {
     const raf = requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         ScrollTrigger.refresh();
-        if (hash === "top") gsap.to(window, { duration: 1, ease: "power2.inOut", scrollTo: { y: 0 } });
+        if (hash === "top") scrollToTop();
         else scrollToHash("#" + hash);
         dispatch({ type: "clearPendingHash" });
       });
@@ -28,7 +28,7 @@ function Shell() {
   return (
     <>
       <Header />
-      <div className="page-spacer" aria-hidden="true" />
+      {state.page !== "home" && state.page !== "hub" && <div className="page-spacer" aria-hidden="true" />}
       <Home />
       <GroundingSanctuary />
       <Crisis />

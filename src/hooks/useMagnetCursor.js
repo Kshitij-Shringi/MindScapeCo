@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { gsap } from "../gsap.js";
 
+// Magnets drive --mx/--my (consumed by `translate` in CSS) rather than GSAP's
+// own x/y, so GSAP never takes over the element's transform and the CSS
+// press feedback (`scale` on :active) keeps working on these buttons.
 export function useMagnetCursor(containerRef, ringRef, active) {
   useEffect(() => {
     if (!active || !containerRef.current || !ringRef.current) return undefined;
@@ -10,8 +13,8 @@ export function useMagnetCursor(containerRef, ringRef, active) {
     const ringY = gsap.quickTo(ring, "y", { duration: 0.5, ease: "power3" });
     const movers = magnets.map((el) => ({
       el,
-      x: gsap.quickTo(el, "x", { duration: 0.5, ease: "power3" }),
-      y: gsap.quickTo(el, "y", { duration: 0.5, ease: "power3" }),
+      x: gsap.quickTo(el, "--mx", { duration: 0.5, ease: "power3" }),
+      y: gsap.quickTo(el, "--my", { duration: 0.5, ease: "power3" }),
     }));
 
     gsap.set(ring, { opacity: 0 });
@@ -34,7 +37,10 @@ export function useMagnetCursor(containerRef, ringRef, active) {
     return () => {
       window.removeEventListener("pointermove", onMove);
       gsap.set(ring, { opacity: 0 });
-      movers.forEach(({ el }) => gsap.set(el, { x: 0, y: 0 }));
+      movers.forEach(({ el }) => {
+        gsap.killTweensOf(el, "--mx,--my");
+        gsap.set(el, { "--mx": "0px", "--my": "0px" });
+      });
     };
   }, [active]);
 }
